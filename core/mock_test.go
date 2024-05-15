@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/puneet166/0xTaral/go-ibft/messages"
-	"github.com/puneet166/0xTaral/go-ibft/messages/proto"
+	"github.com/puneet166/0xTaral/messages"
+	"github.com/puneet166/0xTaral/messages/proto"
 )
 
 const (

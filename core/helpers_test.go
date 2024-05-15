@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/puneet166/0xTaral/go-ibft/messages/proto"
+	"github.com/puneet166/0xTaral/messages/proto"
 )
 
 /*	HELPERS */

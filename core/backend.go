@@ -3,8 +3,8 @@
 package core
 
 import (
-	"github.com/puneet166/0xTaral/go-ibft/messages"
-	"github.com/puneet166/0xTaral/go-ibft/messages/proto"
+	"github.com/puneet166/0xTaral/messages"
+	"github.com/puneet166/0xTaral/messages/proto"
 )
 
 // MessageConstructor defines a message constructor interface

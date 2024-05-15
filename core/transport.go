@@ -1,6 +1,6 @@
 package core
 
-import "github.com/puneet166/0xTaral/go-ibft/messages/proto"
+import "github.com/puneet166/0xTaral/messages/proto"
 
 // Transport defines an interface
 // the node uses to communicate with other peers
