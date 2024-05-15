@@ -1,4 +1,4 @@
-module github.com/puneet166/0xTaral/go-ibft
+module github.com/puneet166/0xTaral
 
 go 1.19
 

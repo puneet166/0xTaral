@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/puneet166/0xTaral/go-ibft/core"
+	"github.com/puneet166/0xTaral/core"
 )
 
 func main() {

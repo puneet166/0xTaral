@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/goleak"
 
-	"github.com/puneet166/0xTaral/go-ibft/messages/proto"
+	"github.com/puneet166/0xTaral/messages/proto"
 )
 
 // generateRandomMessages generates random messages for the

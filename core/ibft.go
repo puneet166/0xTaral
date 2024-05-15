@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/puneet166/0xTaral/go-ibft/messages"
-	"github.com/puneet166/0xTaral/go-ibft/messages/proto"
 	"github.com/armon/go-metrics"
+	"github.com/puneet166/0xTaral/messages"
+	"github.com/puneet166/0xTaral/messages/proto"
 )
 
 // Logger represents the logger behaviour

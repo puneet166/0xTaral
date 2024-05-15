@@ -16,7 +16,7 @@ As mentioned before, `go-ibft` implements basic IBFT 2.0 state machine logic, me
 
 To get up and running with the `go-ibft` package, you can pull it into your project using:
 
-`go get github.com/puneet166/0xTaral/go-ibft`
+`go get github.com/puneet166/0xTaral`
 
 Currently, the minimum required go version is `go 1.17`.
 
@@ -25,7 +25,7 @@ Currently, the minimum required go version is `go 1.17`.
 ```go
 package main
 
-import "github.com/puneet166/0xTaral/go-ibft"
+import "github.com/puneet166/0xTaral"
 
 // IBFTBackend is the structure that implements all required
 // go-ibft Backend interfaces
