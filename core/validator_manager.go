@@ -134,6 +134,26 @@ func calculateQuorum(totalVotingPower *big.Int) *big.Int {
 	return quorum.Div(quorum, big.NewInt(3)).Add(quorum, big.NewInt(1))
 }
 
+// this for future reference to change 2/3 condition of consesus partcipation
+
+// func calculateQuorum(totalVotingPower *big.Int) *big.Int {
+// 	// Multiply totalVotingPower by 6 and then divide by 10
+// 	quorum := new(big.Int).Mul(totalVotingPower, big.NewInt(6))
+// 	quorum = quorum.Div(quorum, big.NewInt(10))
+
+// 	// Check if there is a remainder when dividing by 1
+// 	remainder := new(big.Int).Mod(quorum, big.NewInt(1))
+
+// 	// If remainder is greater than 0, add 1 to the quorum
+// 	if remainder.Cmp(big.NewInt(0)) > 0 {
+// 		return new(big.Int).Add(quorum, big.NewInt(1))
+// 	}
+
+// 	// If no remainder, return the quorum as it is
+// 	return quorum
+// }
+
+
 func calculateTotalVotingPower(validatorsVotingPower map[string]*big.Int) *big.Int {
 	totalVotingPower := big.NewInt(0)
 	for _, validatorVotingPower := range validatorsVotingPower {
