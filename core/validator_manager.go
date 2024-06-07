@@ -134,23 +134,33 @@ func calculateQuorum(totalVotingPower *big.Int) *big.Int {
 	return quorum.Div(quorum, big.NewInt(3)).Add(quorum, big.NewInt(1))
 }
 
-// this for future reference to change 2/3 condition of consesus partcipation
+// This below function accept 60%-40% mean 60% must be active , protocol can tollerate 40% of validators offlibe
 
 // func calculateQuorum(totalVotingPower *big.Int) *big.Int {
 // 	// Multiply totalVotingPower by 6 and then divide by 10
-// 	quorum := new(big.Int).Mul(totalVotingPower, big.NewInt(6))
-// 	quorum = quorum.Div(quorum, big.NewInt(10))
+// 	// totalVotingPower := big.NewInt(4)
+// 	quorumPercentage := 0.6 // 60%
 
-// 	// Check if there is a remainder when dividing by 1
-// 	remainder := new(big.Int).Mod(quorum, big.NewInt(1))
+// 	// Convert total voting power to big.Float
+// 	totalVotingPowerFloat := new(big.Float).SetInt(totalVotingPower)
 
-// 	// If remainder is greater than 0, add 1 to the quorum
-// 	if remainder.Cmp(big.NewInt(0)) > 0 {
-// 		return new(big.Int).Add(quorum, big.NewInt(1))
-// 	}
+// 	// Convert quorum percentage to big.Float
+// 	quorumPercentageFloat := big.NewFloat(quorumPercentage)
+
+// 	// Perform the calculation: quorumPercentage * totalVotingPower
+// 	quorumFloat := new(big.Float).Mul(quorumPercentageFloat, totalVotingPowerFloat)
+
+// 	// Convert the result to a float64
+// 	quorumFloat64, _ := quorumFloat.Float64()
+
+// 	// Apply math.Ceil to the result
+// 	quorumCeilFloat64 := (math.Ceil(quorumFloat64))
+// 	quorumCeilBigFloat := new(big.Float).SetFloat64(quorumCeilFloat64)
+// 	quorumBigInt := new(big.Int)
+// 	quorumCeilBigFloat.Int(quorumBigInt)
 
 // 	// If no remainder, return the quorum as it is
-// 	return quorum
+// 	return quorumBigInt
 // }
 
 
