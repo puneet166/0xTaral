@@ -13,7 +13,7 @@ import (
 var (
 	errVotingPowerNotCorrect = errors.New("total voting power is zero or less")
 )
-
+//
 // ValidatorBackend defines interface that has GetVotingPower
 type ValidatorBackend interface {
 	// GetVotingPowers returns map of validators addresses and their voting powers for the specified height.
